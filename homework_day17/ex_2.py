@@ -46,8 +46,7 @@ class SendNotificationError(NotificationError):
 
 class Notification(ABC):
     def __init__(self,recipient,message):
-        self.recipient = recipient
-        self.message = message
+                super().__init(....)
 
     @abstractmethod
     def send(self):
