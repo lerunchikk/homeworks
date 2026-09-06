@@ -40,8 +40,7 @@ class InvalidRecipientError(NotificationError):
 class SendNotificationError(NotificationError):
     def __init__(self,notification_type,recipient,reason):
         self.notification_type = notification_type
-        self.recipient = recipient
-        self.reason = reason
+        super().__init(....)
 
         super().__init__(f"Ошибка отправки уведомления {self.notification_type} на {self.recipient}:{self.reason}")
 
