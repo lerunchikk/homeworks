@@ -18,7 +18,7 @@ if discount_type == ...
 должен.
 Дедлайн: 04.09.2026"""
 
-class SimplyDiscount:
+class SimplyDiscountStrategy:
     def calculate(self,price):
         return int(0.95 * price)
 
