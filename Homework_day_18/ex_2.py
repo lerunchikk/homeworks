@@ -23,7 +23,7 @@ logs = [
 
 def error_logs(logs):
  for log in logs:
-    if "ERROR" in log:
+    log.startswith("ERROR")
         yield log
 
 for log in error_logs(logs):
